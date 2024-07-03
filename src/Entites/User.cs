@@ -1,7 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Entites;
 
-public class User : Person
+public class User
 {
-    public required string Password { get; set; }
+
+    [Key]
+    [Column("Username")]
     public required string UserName { get; set; }
+
+    [Column("Password")]
+    public required string Password { get; set; }
+
+    [ForeignKey("IdentificationCard")]
+    public required int IdentificationCard { get; set; }
 }
