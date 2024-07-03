@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "Andres Galvan",
+  "classifications": ["Common", "Template", "C#9"],
+  "identity": "CSharpSkeleton",
+  "name": "CSharpSkeleton",
+  "shortName": "skeleton",
+  "sourceName": "CSharpSkeleton",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  }
+}
