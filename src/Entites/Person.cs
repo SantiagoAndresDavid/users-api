@@ -1,6 +1,6 @@
 namespace Entites;
 
-public class person
+public class Person
 {
     public required int IdentificationCard { get; set; }
     public string FirstName { get; set; }

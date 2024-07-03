@@ -1,4 +1,15 @@
+using Api;
+
 var builder = WebApplication.CreateBuilder(args);
+
+ConfigurationManager configuration = builder.Configuration;
+string connectionString =
+    configuration.GetConnectionString("DefaultConnection")!;
+
+builder.Services.AddDbContext<UsersDbContext>(options =>
+    options.SetupDatabaseEngine(connectionString)
+);
+
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
