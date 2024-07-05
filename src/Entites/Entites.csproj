@@ -17,7 +17,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\test\CSharpSkeleton.Test\CSharpSkeleton.Test.csproj" />
-      <ProjectReference Include="..\Services\Services.csproj" />
     </ItemGroup>
 
 </Project>
