@@ -1,3 +1,5 @@
+using Service;
+
 namespace Api;
 
 public static class DependencyInjection
@@ -11,5 +13,6 @@ public static class DependencyInjection
     public static void AddServices(this IServiceCollection services)
     {
         services.AddScoped<UserService>();
+        services.AddScoped<PersonService>();
     }
 }

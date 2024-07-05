@@ -29,9 +29,8 @@ namespace Api.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdentificationCard"));
 
-                    b.Property<string>("Age")
-                        .IsRequired()
-                        .HasColumnType("text")
+                    b.Property<int>("Age")
+                        .HasColumnType("integer")
                         .HasColumnName("Age");
 
                     b.Property<string>("FirstName")

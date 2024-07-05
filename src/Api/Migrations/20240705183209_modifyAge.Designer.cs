@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Api.Migrations
 {
     [DbContext(typeof(UsersDbContext))]
-    [Migration("20240705170155_relaunch")]
-    partial class relaunch
+    [Migration("20240705183209_modifyAge")]
+    partial class modifyAge
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,9 +32,8 @@ namespace Api.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("IdentificationCard"));
 
-                    b.Property<string>("Age")
-                        .IsRequired()
-                        .HasColumnType("text")
+                    b.Property<int>("Age")
+                        .HasColumnType("integer")
                         .HasColumnName("Age");
 
                     b.Property<string>("FirstName")
