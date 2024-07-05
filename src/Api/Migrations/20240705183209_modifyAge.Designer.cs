@@ -23,7 +23,7 @@ namespace Api.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Entites.Person", b =>
+            modelBuilder.Entity("Entities.Person", b =>
                 {
                     b.Property<int>("IdentificationCard")
                         .ValueGeneratedOnAdd()
@@ -61,7 +61,7 @@ namespace Api.Migrations
                     b.ToTable("People");
                 });
 
-            modelBuilder.Entity("Entites.User", b =>
+            modelBuilder.Entity("Entities.User", b =>
                 {
                     b.Property<string>("UserName")
                         .HasColumnType("text")

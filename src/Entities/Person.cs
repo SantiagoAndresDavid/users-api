@@ -22,5 +22,5 @@ public class Person
     public string Gender { get; set; }
 
     [Column("Age")]
-    public string Age { get; set; }
+    public int Age { get; set; }
 }
