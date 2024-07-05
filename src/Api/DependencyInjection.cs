@@ -6,7 +6,10 @@ public static class DependencyInjection
     {
         repositories.AddScoped<UsersRepository>();
         repositories.AddScoped<PersonsRepository>();
-
     }
 
+    public static void AddServices(this IServiceCollection services)
+    {
+        services.AddScoped<UserService>();
+    }
 }
